@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        p{
+            color: brown;
+        }
+        .content{
+            height: 1000px;
+            background-image: url("../session01/image/shinobu-.jpg");
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            display: flex ;
+        }
+        .box4{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            border: 10px solid blue;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        .box5{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            border: 10px solid blue;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+        .box4, .box5{
+            flex-basis: 100;            
+        }
+        .content > p {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <!--  -->
+    <div class="content">
+        <p>css basic</p>
+        <p>css basic</p>
+        <p>css basic</p>
+        <p class="box4">css basic</p>
+        <p class="box5">css basic</p>
+    </div>
+       
+</body>
+</html>
